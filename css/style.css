@@ -1,0 +1,123 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&family=Poppins:wght@100;200;300;400;500;600;700&family=Racing+Sans+One&display=swap');
+/*
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Racing Sans One', cursive;
+*/
+
+*{box-sizing: border-box;}
+html, body{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+body::-webkit-scrollbar{width:0;}
+
+
+/*실습1*/
+#ex_01{padding: 60px 0; 
+    background-image: url(../img/grapes-bg-left.png), url(../img/grapes-bg-right.png);
+    background-position: 0 50%, 100% 50%;
+    background-size: 240px, 240px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+#ex_01 .wrap{width: 1200px; font-size: 0; margin: 0 auto;}
+#ex_01 .wrap .box{display: inline-block; width: 20%; padding: 0 10px 20px;}
+#ex_01 .wrap .box .inbox{height: 220px; border-radius: 8px; padding: 20px; background-color: #fff; border: 1px solid #ddd; transition: box-shadow 1s;}
+
+#ex_01 .wrap .box:hover .inbox{box-shadow: 0 0 8px rgba(255,0,0,0.75);}
+
+#ex_01 .wrap .box .inbox .img_part{height: 100%; background-size: cover; background-position: 50% 50%; border-radius: 4px;}
+#ex_01 .wrap .box:nth-child(1) .inbox .img_part{background-image: url(../img/fruit_01.jpg);}
+#ex_01 .wrap .box:nth-child(2) .inbox .img_part{background-image: url(../img/fruit_02.jpg);}
+#ex_01 .wrap .box:nth-child(3) .inbox .img_part{background-image: url(../img/fruit_03.jpg);}
+#ex_01 .wrap .box:nth-child(4) .inbox .img_part{background-image: url(../img/fruit_04.jpg);}
+#ex_01 .wrap .box:nth-child(5) .inbox .img_part{background-image: url(../img/fruit_05.jpg);}
+#ex_01 .wrap .box:nth-child(6) .inbox .img_part{background-image: url(../img/fruit_06.jpg);}
+#ex_01 .wrap .box:nth-child(7) .inbox .img_part{background-image: url(../img/fruit_07.jpg);}
+#ex_01 .wrap .box:nth-child(8) .inbox .img_part{background-image: url(../img/fruit_08.jpg);}
+#ex_01 .wrap .box:nth-child(9) .inbox .img_part{background-image: url(../img/fruit_09.jpg);}
+#ex_01 .wrap .box:nth-child(10) .inbox .img_part{background-image: url(../img/fruit_10.jpg);}
+
+
+
+
+/*실습2*/
+#ex_02{padding: 40px 0; background-image: url(../img/cook_bg.png); background-size: cover; background-size: cover; font-family: 'Poppins', sans-serif; border-top: 1px solid #333; border-bottom: 1px solid #333;}
+
+#ex_02 .wrap{width: 1200px; margin: 0 auto; text-align: center;}
+#ex_02 .wrap h2{font-size: 28px; color:#f70; line-height: 60px; padding-bottom: 20px;}
+
+#ex_02 .wrap .cont{font-size: 0;}
+#ex_02 .wrap .cont .box{display: inline-block; width: 25%; padding: 0 10px; font-size: 16px; color:#777}
+#ex_02 .wrap .cont .box .inbox{border:1px solid #ddd; border-radius:6px; padding: 15px; background-color: #fff;  transition: box-shadow 1s;}
+
+#ex_02 .wrap .cont .box .inbox:hover{box-shadow: 0 0 8px rgba(0,0,0,0.5);}
+
+#ex_02 .wrap .cont .box .inbox .img_part{height: 240px; background-size: cover; background-position: 50% 50%; border-radius: 4px;}
+#ex_02 .wrap .cont .box:nth-child(1) .inbox .img_part{background-image: url(../img/dessert_01.jpg);}
+#ex_02 .wrap .cont .box:nth-child(2) .inbox .img_part{background-image: url(../img/dessert_02.jpg);}
+#ex_02 .wrap .cont .box:nth-child(3) .inbox .img_part{background-image: url(../img/dessert_03.jpg);}
+#ex_02 .wrap .cont .box:nth-child(4) .inbox .img_part{background-image: url(../img/dessert_04.jpg);}
+
+#ex_02 .wrap .cont .box .inbox .txt_part{padding-top: 20px;}
+
+#ex_02 .wrap .cont .box .inbox .txt_part h3{font-size: 18px; color:#777;}
+
+#ex_02 .wrap .cont .box .inbox .txt_part .b_info{padding-top: 20px;}
+#ex_02 .wrap .cont .box .inbox .txt_part .b_info:after{content:""; display: block; clear: both;}
+#ex_02 .wrap .cont .box .inbox .txt_part .b_info button{float: left; height: 40px; border-radius:20px; padding: 0 20px; background-color: transparent; border:1px solid #f70; color:#f70; cursor: pointer; font-family: 'Poppins', sans-serif; font-size: 14px;}
+
+#ex_02 .wrap .cont .box .inbox .txt_part .b_info button:hover{background-color: #f70; color:#fff;}
+
+#ex_02 .wrap .cont .box .inbox .txt_part .b_info a{float: right;}
+#ex_02 .wrap .cont .box .inbox .txt_part .b_info a img{display: block; height: 40px;}
+
+
+
+/*실습3*/
+#ex_03{font-size: 0; font-family: 'Poppins', sans-serif;}
+#ex_03 .box{display: inline-block; vertical-align: top; width: calc(100% / 3); height: 900px;  padding: 20px; position: relative; font-size: 16px;}
+#ex_03 .box:nth-child(1){background-color: #6364a7;}
+#ex_03 .box:nth-child(1) h2{font-size: 40px; font-family: 'Racing Sans One', cursive; color:#fff; width: 200px;}
+#ex_03 .box:nth-child(1) .inborder{position: absolute; width: 200px; height: 200px; bottom: 20px; left: 20px; border:10px solid #fff; padding: 10px;}
+#ex_03 .box:nth-child(1) .inborder img:nth-child(1){display: block; height: 60px;}
+#ex_03 .box:nth-child(1) .inborder img:nth-child(2){position: absolute; bottom: 10px; left: 10px; display: block; height: 20px;}
+#ex_03 .box:nth-child(2){background-image: url(../img/pantone_color_img.png); background-size: cover; background-position: 50% 50%;}
+
+#ex_03 .box:nth-child(3){background-color: #fff;}
+#ex_03 .box:nth-child(3) .info{position: absolute; width: calc(100% - 40px); left: 20px; bottom: 20px;}
+#ex_03 .box:nth-child(3) .info h3{font-size: 32px; color:#6364a7; width: 180px; }
+#ex_03 .box:nth-child(3) .info p{padding: 10px 0 20px; color:#777;}
+#ex_03 .box:nth-child(3) .info button{border:1px solid #6364a7; color:#6364a7; height: 40px; padding: 0 20px; border-radius: 20px; font-family: 'Poppins', sans-serif; background-color: transparent; cursor: pointer;}
+#ex_03 .box:nth-child(3) .info button:hover{background-color: #6364a7; color:#fff;} 
+
+
+/*실습4*/
+#ex_04{font-size: 0; font-family: 'Poppins', sans-serif;}
+#ex_04 .wrap{width: 1200px; margin: 0 auto;}
+#ex_04 .wrap > div{display: inline-block; vertical-align: top; width: calc(100% / 3); height: 400px; font-size: 16px; position: relative;}
+#ex_04 .wrap > div.tit{border: 10px solid #6364a7; padding: 10px; }
+#ex_04 .wrap > div.tit h3{font-family: 'Racing Sans One', cursive; font-size: 40px; color:#6364a7;}
+#ex_04 .wrap > div.tit p{position: absolute; bottom: 20px; left: 20px; width: calc(100% - 40px); font-size: 16px; color:#777;}
+#ex_04 .wrap > div.img{background-color: #b3b4f7; background-size: 80%; background-repeat: no-repeat; background-position: 50% 50%; }
+#ex_04 .wrap > div.img.img1{background-image: url(../img/design_01.png);}
+#ex_04 .wrap > div.img.img2{background-image: url(../img/design_02.png);}
+#ex_04 .wrap > div.img.img3{background-image: url(../img/design_03.png);}
+#ex_04 .wrap > div.img.img4{background-image: url(../img/design_04.png);}
+
+#ex_04 .wrap > div.img .intxt{position: absolute; bottom: 0; left: 0; width: 100%; background-color: rgba(9, 10, 77, 0.75); padding: 10px 0; text-align: center; color:#fff;}
+#ex_04 .wrap > div.img .intxt h4{font-size: 18px; padding-bottom: 10px;}
+#ex_04 .wrap > div.img .intxt p{font-size: 14px;}
+
+#ex_04 .wrap > div.txt{background-color: #6364a7; padding: 20px;}
+#ex_04 .wrap > div.txt h3{font-weight: 700; color:#fff; font-size: 36px;}
+#ex_04 .wrap > div.txt p{position: absolute; width: calc(100% - 40px); bottom: 20px; left: 20px; color:#b3b4f7;}
+#ex_04 .wrap > div.txt1:after{content:""; display: block; position: absolute; border-right: 20px solid #6364a7; border-top: 20px solid transparent; border-bottom: 20px solid transparent; left: -20px; top: calc(50% - 20px); z-index: 1;}
+#ex_04 .wrap > div.txt2:after{content:""; display: block; position: absolute; border-left: 20px solid #6364a7; border-top: 20px solid transparent; border-bottom: 20px solid transparent; right: -20px; top: calc(50% - 20px); z-index: 1;}
+#ex_04 .wrap > div.txt3:after{content:""; display: block; position: absolute; border-bottom: 20px solid #6364a7; border-left: 20px solid transparent; border-right: 20px solid transparent; left: calc(50% - 20px); top:-20px; z-index: 1;}
+#ex_04 .wrap > div.txt4:after{content:""; display: block; position: absolute; border-right: 20px solid #6364a7; border-top: 20px solid transparent; border-bottom: 20px solid transparent; left: -20px; top: calc(50% - 20px); z-index: 1;}

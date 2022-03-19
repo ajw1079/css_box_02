@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h3>우선 조건1. 스타일 시트의 전체 선택자(*)에 box-sizing:border-box;를 설정하시오.</h3>
+    <h3>우선 조건2. 영문 폰트 'Racing Sans One', 'Poppins'(100~700), 영/한글폰트 'Noto Sans KR'(100~400)을 구글 폰트로부터 연동하시오.</h3>
+    <h3></h3>
+    <hr>
+    <h2>실습1. 아래의 결과화면을 도출하시오.</h2>
+    <p><b>조건1.</b> 브라우저 전체를 활용하여 멀티 배경이미지를 넣으시오.(배경 이미지의 사이즈는 가로만 240px, 배경 이미지의 위치는 각각 좌우측으로 조정하고 전체 공간의 수직방향 중앙에 배치, 배경반복 없음, 화면에 고정할 것). 상하 패딩 공간 60px 적용</p>
+    <p><b>조건2.</b> 내부 프레임 공간은 가로만 1200px으로 설정하고 중앙에 위치시키시오.</p>
+    <p><b>조건3.</b> 가로 배치된 각 10개의 박스 영역은 각 공간을 5분할로 적용하고 패딩을 양측면에 10px 하단으로 20px 부여하시오. (각 이미지 공간은 모두 형제 구조)</p>
+    <p><b>조건4.</b> 각 박스 내부에 공간을 구성(세로만 220px, 모서리는 8px의 라운드 처리, 내부 패딩은 20px 적용하여 실제 이미지 공간과 이격되도록 설정, 배경색상은 흰색, 테두리 라인은 1px solid #ddd)하고 마우스 오버시 박스 그림자(0 0 8px rgba(255,0,0,0.75);) 부여할것(시간차 1초 부여)</p>
+    <p><b>조건5.</b> 이미지 공간은 배경 사이즈 cover 적용하고, 중앙에 이미지 위치시키시오. 추가로 모서리부분은 4px로 둥글게 처리하시오.</p>
+
+    <div id="ex_01">
+        <div class="wrap">
+            <div class="box">
+                <div class="inbox">
+                    <div class="img_part"></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inbox">
+                    <div class="img_part"></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inbox">
+                    <div class="img_part"></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inbox">
+                    <div class="img_part"></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inbox">
+                    <div class="img_part"></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inbox">
+                    <div class="img_part"></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inbox">
+                    <div class="img_part"></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inbox">
+                    <div class="img_part"></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inbox">
+                    <div class="img_part"></div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="inbox">
+                    <div class="img_part"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+    <h2>실습2. 아래의 결과화면을 도출하시오.</h2>
+    <p><b>조건1.</b> 브라우저 전체를 활용하여 배경이미지를 넣으시오.(배경 이미지의 사이즈는 cover, 배경 이미지의 위치는 공간의 중앙에 배치, 배경반복 적용). 상하 패딩 공간 40px 적용. 전체 영역의 폰트는 'Poppins' 적용</p>
+    <p><b>조건2.</b> 내부 프레임 공간은 가로만 1200px으로 설정하고 중앙에 위치시키시오.</p>
+    <p><b>조건3.</b> 상단의 타이틀 영역과 하단의 상품 콘텐츠 영역으로 분리하시오.</p>
+    <p><b>조건4.</b> 상단의 타이틀 영역에 타이틀(h1~h6) 태그를 넣고 중앙배치, 폰트 크기 28px, 폰트 색상 #f70, 문단 높이 60px, 하단의 상품 공간과는 20px 이격시키시오.</p>
+    <p><b>조건5.</b> 하단 상품 콘텐츠 영역 내부에 가로가 25% 적용된 박스 공간으로 가로배치하고 내부에 좌우측 10px씩의 사이를 떨어뜨리시오. (각 이미지 공간은 모두 형제 구조)</p>
+    <p><b>조건6.</b> 각 박스 내부에 공간을 구성(모서리는 6px의 라운드 처리, 내부 패딩은 15px 적용하여 실제 내부 콘텐츠와 이격되도록 설정, 배경색상은 흰색, 테두리 라인은 1px solid #ddd)하고 마우스 오버시 박스 그림자(0 0 8px rgba(0,0,0,0.5);) 부여할것(시간차 1초 부여)</p>
+    <p><b>조건7.</b> 상품 영역의 각 상단 이미지 공간은 높이를 240px로 적용, 배경 사이즈 cover 적용하고, 중앙에 이미지 위치시키시오. 추가로 모서리부분은 4px로 둥글게 처리하시오.</p>
+    <p><b>조건8.</b> 상품 영역의 각 하단 텍스트 공간은 상단의 이미지 공간과 20px 이격시키고, 내부 타이틀 공간과 하단 버튼 및 ♡를 넣을 수 있는 공간으로 분리(수직방향 사이간격은 20px)하되, 텍스트 공간 상단의 타이틀 폰트 크기는 18px, 폰트 색상 #777, 중앙배치 / 하단의 버튼 및 ♡는 각 영역의 좌우측으로 배치하시오.(float을 적용할 것)</p>
+    <p><b>조건9.</b> 'Detail More'라는 버튼은 button 태그를 사용하여 세로 40px, 캡슐 형태로 구성(좌우 패딩만 20px)하면서 배경색상 투명화, border 두께 1px 실선(색상은 #f70), 폰트 크기 14px, 폰트 색상 #f70, 'Poppins' 서체 적용, 커서 형태 pointer로 변경하시오.(버튼영역에 마우스 오버시, 배경색상 #f70, 폰트 색상 흰색으로 변경)  /  ♡도 링크 가능한 태그 내부에 img 태그를 사용하여 적용하된 높이만 40px 적용하시오. </p>
+
+    <div id="ex_02">
+        <div class="wrap">
+            <h2>Best Item</h2>
+
+            <div class="cont">
+                <div class="box">
+                    <div class="inbox">
+                        <div class="img_part"></div>
+                        <div class="txt_part">
+                            <h3>Strawberry Dunut</h3>
+                            <div class="b_info">
+                                <button>Detail More</button>
+                                <a href=""><img src="./img/heart_icon.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inbox">
+                        <div class="img_part"></div>
+                        <div class="txt_part">
+                            <h3>Honey Pudding</h3>
+                            <div class="b_info">
+                                <button>Detail More</button>
+                                <a href=""><img src="./img/heart_icon.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inbox">
+                        <div class="img_part"></div>
+                        <div class="txt_part">
+                            <h3>Double Macaron</h3>
+                            <div class="b_info">
+                                <button>Detail More</button>
+                                <a href=""><img src="./img/heart_icon.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="inbox">
+                        <div class="img_part"></div>
+                        <div class="txt_part">
+                            <h3>Strawberry Cake</h3>
+                            <div class="b_info">
+                                <button>Detail More</button>
+                                <a href=""><img src="./img/heart_icon.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+    <h2>실습3. 아래의 결과화면을 도출하시오.</h2>
+    <p><b>조건1.</b> 브라우저 전체를 활용하하도록 공간을 구성하시오. 전체 영역의 폰트는 'Poppins' 적용</p>
+    <p><b>조건2.</b> 가로방향으로 배치한 내부의 영역 가로값은 calc(100% / 3)으로 정확하게 분할하고 높이 공간을 900px으로 적용하시오.(내부 패딩을 상하좌우 20px, position:relative; 적용)</p>
+    <p><b>조건3.</b> 좌측 공간(배경 색상 #6364a7)의 상단 타이틀은 'Racing Sans One' 서체 적용, 가로 공간을 200px로 고정시켜 글자 내려오도록 구성, 폰트 크기 40px, 폰트 색상 흰색으로 조정하시오. 하단의 박스 영역은 position을 활용하여 위치시키된 부모인 좌측 박스 공간의 하단으로부터 20px, 좌측으로부터 20px 적용시키면서 가로 200px, 세로 200px, border 두께가 10px인 실선(선의 색상은 흰색), 내부 패딩을 10px부여하고, 상단의 'Color of the Year 2022' 이미지와 하단의 'PANTONE' 이미지를 img 태그 활용하되, 상단의 이미지는 높이만 60px, 하단의 이미지는 높이만 20px 부여하면서 position을 활영하여 하단으로부터 10px, 좌측으로부터 10px인 곳에 위치시키시오.</p>
+    <p><b>조건4.</b> 중앙 공간에는 주어진 이미지를 배경으로 적용하고 배경 사이즈 cover, 배경 위치 중앙 배치 시키시오.</p>
+    <p><b>조건5.</b> 우측 공간(배경색상 #fff)에의 텍스트 및 버튼을 감싸는 공간을 구성하고 position을 활용하여 하단으로부터 20px, 좌측으로부터 20px인 곳에 위치시키시오. 우측 공간의 상단 타이틀은 폰트 크기 32px, 폰트 색상 #6364a7, 가로 공간 180px로 고정 / 문장은 폰트 크기 16px, 폰트 색상 #777, 상하로 각각 10px과 20px 이격 / 하단의 버튼은 button 태그를 사용하여 세로 40px, 캡슐 형태로 구성(좌우 패딩만 20px)하면서 배경색상 투명화, border 두께 1px 실선(색상은 #6364a7), 폰트 크기 16px, 폰트 색상 #6364a7, 'Poppins' 서체 적용, 커서 형태 pointer로 변경하시오.(버튼영역에 마우스 오버시, 배경색상 #6364a7, 폰트 색상 흰색으로 변경) </p>
+
+
+
+    <div id="ex_03">
+        <div class="box">
+            <h2>Every year has its color.</h2>
+            <div class="inborder">
+                <img src="./img/pantone_color_txt.png" alt="">
+                <img src="./img/pantone_color_tit.png" alt="">
+            </div>
+        </div>
+        <div class="box"></div>
+        <div class="box">
+            <div class="info">
+                <h3>Very Peri 17-3938</h3>
+                <p>PANTONE’s Color of the Year sets design and fashion trends for months to come, capturing the spirit of times we live in. And boy, what times are these! Meet Very Peri – an exotic blend of dynamic blue and violet red undertones that reflects the transformation the world is going through right now. This happiest and warmest of all the blue hues merges digital and physical lives together, inviting us to look optimistically into the future. Let’s get inspired!</p>
+                <button>GRAB IT WHILE IT'S HOT</button>
+            </div>
+        </div>
+    </div>
+ 
+
+    <hr>
+    <h2>실습4. 아래의 결과화면을 도출하시오.</h2>
+    <p><b>조건1.</b> 브라우저 전체를 활용하하도록 공간을 구성하시오. 전체 영역의 폰트는 'Poppins' 적용</p>
+    <p><b>조건2.</b> 내부 프레임 공간은 가로만 1200px으로 설정하고 중앙에 위치시키시오.</p>
+    <p><b>조건3.</b> 9개의 형제 박스 가로방향으로 배치한 내부의 영역 가로값은 calc(100% / 3)으로 정확하게 분할하고 높이 공간을 400px으로 적용하시오.(내부 패딩을 상하좌우 20px, position:relative; 적용)</p>
+    <p><b>조건4.</b> 첫번째 박스는 클래스명을 별도로 구성하되 내부 테두리 영역을 10px 실선(라인 색상 #6364a7)하고 내부패딩을 10px으로 별도 적용하고 내부의 상단 타이틀('Racing Sans One' 서체, 폰트 크기 40px, 폰트 색상 #6364a7)과 하단 문장(position:absolute; 테두리 외곽 기준으로 하단으로부터 20px, 좌측으로부터 20px 적용, 폰트 크기 16px, 폰트 색상 #777)으로 구성하시오.</p>
+    <p><b>조건5.</b> 이미지 박스는 각 해당하는 이미지를 배치하되 배경 사이즈를 공간 대비하여 가로만 80%로 적용하고 배경 이미지의 위치를 중앙 배치, 반복 적용을 제거하시오. 각 이미지 공간 하단의 글자 공간(배경 색상 rgba(9, 10, 77, 0.75))은 상하로 패딩 10px 부여하고 타이틀(폰트 크기 18px, 폰트 색상 흰색, 하단 부제와 10px 수직방향 이격)과 부제(폰트 크기 14px, 폰트 색상 흰색)를 설정하시오.</p>
+    <p><b>조건6.</b> 텍스트 박스(배경색상 #6364a7)는 내부 타이틀(폰트 크기 36px, 폰트 색상 흰색, 폰트 굵기 700)과 내용(폰트 크기 16px, 폰트 색상 #b3b4f7, position:absolute; 하단으로부터 20px, 좌측으로부터 20px 위치)를 설정하시오.</p>
+    <p><b>조건7.</b> 이미지와 텍스트 박스 간의 연결인 삼각형을 각 텍스트 공간에 after(가상 공간)를 설정하여 구성하고 지정된 위치를 position:absolute;를 활용하여 배치시키시오. (상방향 삼각형 스타일 예시 - border-bottom: 20px solid #6364a7; border-left: 20px solid transparent; border-right: 20px solid transparent;)</p>
+
+
+    <div id="ex_04">
+        <div class="wrap">
+            <div class="tit">
+                <h3>Grab it!</h3>
+                <p>How can you make your life More Very Peri? Liven up your life with a few trinkets in this shade of purple! See for yourself that changing your life starts with adding little things – from candles, to shoes, to much, much more.</p>
+            </div>
+            <div class="img img1">
+                <div class="intxt">
+                    <h4>PEDRALI</h4>
+                    <p>Queen chair</p>
+                </div>
+            </div>
+            <div class="txt txt1">
+                <h3>Let your decor do the talking</h3>
+                <p>Lose yourself in the Very Peri love – and don’t be afraid to express that love with your house décor. Be bold! And just like a real player, put all your chips on a single color and see how purple furniture can be a winning bet.</p>
+            </div>
+            
+            <div class="img img2">
+                <div class="intxt">
+                    <h4>BOTTEGA VENETA</h4>
+                    <p>Hand bag</p>
+                </div>
+            </div>
+            <div class="txt txt2">
+                <h3>What’s your story?</h3>
+                <p>Let everyone know just how rich your soul is and collect books that tell your story! Go a step further and show that you identify with the times we live in – by adding a book with a shade of purple to your collection.</p>
+            </div>
+            <div class="img img3">
+                <div class="intxt">
+                    <h4>DESIGNHERS</h4>
+                    <p>Design book</p>
+                </div>
+            </div>
+            <div class="txt txt3">
+                <h3>Take it wherever you go</h3>
+                <p>The devil is in the details and a single purse can redefine your entire outfit. Are you ready for that? Celebrate the year of Very Peri by embracing the changes – starting with your outfit.</p>
+            </div>
+            <div class="img img4">
+                <div class="intxt">
+                    <h4>GUESS</h4>
+                    <p>Sport shoes</p>
+                </div>
+            </div>
+            <div class="txt txt4">
+                <h3>Be your own Cinderella</h3>
+                <p>Make a statement with every step you take, but let your shoes do the talking. So choose a pair in a shade of purple and walk with confidence towards all the changes that this year might bring.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+
+
+</body>
+</html>
